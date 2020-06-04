@@ -5,6 +5,7 @@ After=bluetooth.service
 
 [Service]
 Type=simple
+WorkingDirectory=/home/pi/bt_keyboard_py3
 ExecStart=/usr/bin/python3 /home/pi/bt_keyboard_py3/btk_server.py
 
 [Install]
