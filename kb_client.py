@@ -53,7 +53,6 @@ class Kbrd:
         :param value: Binary 1 or 0 depending if pressed or released
         """
         self.mod_keys = value << mod_key
-        print(bin(self.mod_keys))
 
     def update_keys(self, norm_key, value):
         if value < 1:
@@ -89,7 +88,6 @@ class Kbrd:
             if event.type == evdev.ecodes.EV_KEY and event.value < 2:
                 key_str = evdev.ecodes.KEY[event.code]
                 mod_key = keymap.modkey(key_str)
-                print(key_str, event.value)
                 if mod_key > -1:
                     self.update_mod_keys(mod_key, event.value)
                 else:
