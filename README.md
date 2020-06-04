@@ -3,7 +3,7 @@ This repository turns a Raspberry Pi into a bluetooth keyboard.
 The initial instructions and the code can be found here:
 http://yetanotherpointlesstechblog.blogspot.com/2016/04/emulating-bluetooth-keyboard-with.html
 
-The code presented in the blog is outdated, using very old libraries, have dirty hacks(e.g depens on GTK while not having GUI), and does not handle device disconnection correclty(you have to restart __eveything__ to reconnect your keyboard).
+The code presented in the blog is outdated, using very old libraries, have dirty hacks(e.g depends on GTK while not having GUI), and does not handle device disconnection correclty(you have to restart __eveything__ to reconnect your keyboard).
 The port to Python3 is done by @ukBaz. You can check the changes he made at: https://gist.github.com/ukBaz/a47e71e7b87fbc851b27cde7d1c0fcf0
 
 ## Usage

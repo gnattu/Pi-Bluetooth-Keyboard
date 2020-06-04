@@ -1,0 +1,11 @@
+[Unit]
+Description=Raspberry Pi Bluetooth HID server daemon
+Requires=bluetooth.service
+After=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/bt_keyboard_py3/btk_server.py
+
+[Install]
+WantedBy=multi-user.target
