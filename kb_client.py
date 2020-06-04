@@ -52,7 +52,7 @@ class Kbrd:
         :param mod_key: The value of the bit to be updated with new value
         :param value: Binary 1 or 0 depending if pressed or released
         """
-        self.mod_keys = value << mod_key
+        self.mod_keys = value << (7 - mod_key)
 
     def update_keys(self, norm_key, value):
         if value < 1:
