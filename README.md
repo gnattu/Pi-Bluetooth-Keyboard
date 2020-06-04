@@ -147,6 +147,26 @@ self.discoverable = False
 
 So that only paired devices could connect.
 
+### 5. Auto Start
+
+If the setup is working, you can edit two service files provided, change the `WorkingDirectory` and `ExecStart` line to the path of this repo stored on your machine, then:
+
+```shell
+sudo cp btk_server.service /etc/systemd/system/btk_server.service
+sudo cp kb_client.service /etc/systemd/system/kb_client.service
+sudo systemctl daemon-reload
+sudo systemctl start btk_server.service
+sudo systemctl start kb_client.service
+```
+
+If working, you can enable them:
+
+```shell
+sudo systemctl enable btk_server.service
+sudo systemctl enable kb_client.service
+```
+Now the keyboard is ready to connect on boot.
+
 ### Limitation
 
 iOS devices do not want to automatically reconnect after disconnection, you have to manually connect to the Pi-Keyboard again.
