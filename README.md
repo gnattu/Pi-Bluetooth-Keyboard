@@ -57,7 +57,7 @@ The `input` Bluetooth plugin needs to be removed so that it does not grab the so
 sudo /usr/lib/bluetooth/bluetoothd -P input
 ```
 
-The service file to start the bluetooth daemon is located at `/lib/systemd/system/bluetooth.service`, you can modify it directly, but your edition might be overwritten after system updates. I strongly recommend to utilizing systemd's service priority feature:
+The service file to start the bluetooth daemon is located at `/lib/systemd/system/bluetooth.service`, you can modify it directly, but your edition might be overwritten after system updates. I strongly recommend to utilize systemd's service priority feature:
 
 ```shell
 sudo cp /lib/systemd/system/bluetooth.service /etc/systemd/system/bluetooth.service
