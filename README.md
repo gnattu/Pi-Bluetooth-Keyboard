@@ -1,12 +1,3 @@
----
-title: "README"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 This repository turns a Raspberry Pi into a bluetooth keyboard.
 
 The initial instructions and the code can be found here:
